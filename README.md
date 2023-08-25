@@ -20,7 +20,7 @@
 </div>
 
   
-#### Due: TBD e.g., Mar 21 (Mon) 23:59 KST </b>
+#### Due: October 15, 2023 (Sunday) 23:59 KST
 #### Where to Submit: GradeScope
 
 ## Setup
