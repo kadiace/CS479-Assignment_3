@@ -55,8 +55,8 @@ pip install -r requirements.txt
 ## Task 0: Introduction
 ### Assignment Tips
 
-Implementation of diffusion models would be simple once you understand the theory.
-So, to learn the most from this tutorial, it's highly recommended to check out the details in the
+Implementation of diffusion models can be simple once you understand the theory.
+So, to learn the most from this assignment, it's highly recommended to check out the details in the
 related papers and understand the equations **BEFORE** you start the assignment. You can check out
 the resources in this order:
 
@@ -64,6 +64,8 @@ the resources in this order:
 2. [[paper](https://arxiv.org/abs/2006.11239)] Denoising Diffusion Implicit Models
 3. [[blog](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)] Lilian Wang's "What are Diffusion Models?"
 4. [[slide](./assets/summary_of_DDPM_and_DDIM.pdf)] Summary of DDPM and DDIM
+
+More further reading materials are provided [here](#further-readings).
 
 ### Forward Process
 Denoising Diffusion Probabilistic Model (DDPM) is one of latent-variable generative models consisting of a Markov chain. In the Markov chain, let us define a _forward process_ that gradually adds noise to the data sampled from a data distribution $\mathbf{x}_0 \sim q(\mathbf{x}_0)$ so that $\mathbf{x}_0$ becomes pure white Gaussian noise at $t=T$. Each transition of the forward process is as follows:
@@ -256,11 +258,13 @@ Otherwise, you will receive up to 100 points from this assignment that count tow
 
 ## Further Readings
 
-If you are interested in this topic, we encourage you to check ou the materials below.
+If you are interested in this topic, we encourage you to check out the materials below.
 
 - [Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2006.11239) 
 - [Denoising Diffusion Implicit Models](https://arxiv.org/abs/2010.02502) 
 - [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/abs/2105.05233) 
 - [Score-Based Generative Modeling through Stochastic Differential Equations](https://arxiv.org/abs/2011.13456)
 - [What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/) 
-- [Generative Modeling by Estimating Gradients of the Data Distribution](https://yang-song.net/blog/2021/score/) 
+- [Generative Modeling by Estimating Gradients of the Data Distribution](https://yang-song.net/blog/2021/score/)
+- [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/abs/1503.03585)
+- [Bayesian Learning via Stochastic Gradient Langevin Dynamics](https://www.stats.ox.ac.uk/~teh/research/compstats/WelTeh2011a.pdf)
