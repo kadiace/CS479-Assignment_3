@@ -61,7 +61,7 @@ related papers and understand the equations **BEFORE** you start the assignment.
 the resources in this order:
 
 1. [[paper](https://arxiv.org/abs/2006.11239)] Denoising Diffusion Probabilistic Models
-2. [[paper](https://arxiv.org/abs/2006.11239)] Denoising Diffusion Implicit Models
+2. [[paper](https://arxiv.org/abs/2010.02502)] Denoising Diffusion Implicit Models
 3. [[blog](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)] Lilian Wang's "What are Diffusion Models?"
 4. [[slide](./assets/summary_of_DDPM_and_DDIM.pdf)] Summary of DDPM and DDIM
 
