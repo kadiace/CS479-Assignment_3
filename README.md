@@ -25,7 +25,17 @@
 
 ## Setup
 
-Install the required package within the `requirements.txt`
+We use the same `conda` environment used in Assignment1. You can skip the part of creating conda environment and just install additional packages in `requirements.txt` following the instruction below.
+
+```
+conda create -n diffusion python=3.9
+conda activate diffusion
+conda install pytorch=1.13.0 torchvision pytorch-cuda=11.6 -c pytorch -c nvidia
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+conda install pytorch3d -c pytorch3d
+```
+
+Lastly, install the required package within the `requirements.txt`
 ```
 pip install -r requirements.txt
 ```
