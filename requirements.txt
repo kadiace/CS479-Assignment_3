@@ -8,3 +8,4 @@ jupyterlab==4.0.2
 pytorch_lightning
 dotmap
 ipywidgets
+scipy==1.7.3
