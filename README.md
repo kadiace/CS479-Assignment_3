@@ -243,7 +243,7 @@ Take a screenshot of a FID score and include at least 8 sampled images.
 </details>
 
 In a single document, write your name and student ID, and include submission items listed above. Refer to more detailed instructions written in each task section about what to submit.
-Name the document `{NAME}_{STUDENT_ID}.pdf` and submit **both your code and the document** as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip`. 
+Name the document `{NAME}_{STUDENT_ID}.pdf` and submit **both your code (`.py` and `.ipynb` script files) and the document** as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip`. 
 **Only for this programming assignment**, exclude any model checkpoints, including the provided pre-trained classifier checkpoint when compressing the files.
 Submit the zip file on GradeScope.
 
