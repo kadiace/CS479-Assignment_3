@@ -216,7 +216,6 @@ Take a screenshot of a FID score and include at least 8 sampled images.
   <img width="500" alt="image" src="./assets/images/task2_output_example.png")
   </p>
 
- it could be due to an overflow problem with the linalg.sqrtm function in the most recent version of scipy. It has been observed that scipy version 1.7.3 does not have this issue. To fix this, you should reinstall scipy to the specific version by running the command: pip install scipy==1.7.3.
  
 ❗️ If you face **negative FID** values, it might be due to an overflow issue with the `linalg.sqrtm` function in the latest version of `scipy`. We've observed that `scipy` version 1.7.3 works correctly. To fix the issue, reinstall scipy to 1.7.3 version by running the command: `pip install scipy=1.7.3`.
 
