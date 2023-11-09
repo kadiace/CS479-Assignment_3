@@ -243,8 +243,16 @@ Take a screenshot of a FID score and include at least 8 sampled images.
 </details>
 
 In a single document, write your name and student ID, and include submission items listed above. Refer to more detailed instructions written in each task section about what to submit.
-Name the document `{NAME}_{STUDENT_ID}.pdf` and submit **both your code (`.py` and `.ipynb` script files) and the document** as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip`. 
-**Only for this programming assignment**, exclude any model checkpoints, including the provided pre-trained classifier checkpoint when compressing the files.
+Name the document `{NAME}_{STUDENT_ID}.pdf` and submit a **ZIP** file named `{NAME}_{STUDENT_ID}.zip` containing the following:
+- The `{NAME}_{STUDENT_ID}.pdf` document file.
+- All `.py` and `.ipynb` script files from the Assignment3 directory. Include both the scripts you have modifed and those that already existed.
+- Due to file size, exclude all checkpoint files, even the provided classifier checkpoint file (`afhq_inception_v3.ckpt`).
+
+**the document and the code (`.py` and `.ipynb` script files).**
+
+**both your code (`.py` and `.ipynb` script files) and the document** as a **ZIP** file named `{NAME}_{STUDENT_ID}.zip`. 
+**Only for this programming assignment**, when you compress the files, exclude all model checkpoint files, even the provided classifer checkpoitn file (`afhq_inception_v3.ckpt`).
+
 Submit the zip file on GradeScope.
 
 ## Grading
