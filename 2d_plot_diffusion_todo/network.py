@@ -84,6 +84,25 @@ class SimpleNet(nn.Module):
         ######## TODO ########
         # DO NOT change the code outside this part.
 
+        # Define a list to hold the layers of the neural network.
+        layers = []
+
+        # Add the input layer to the list.
+        layers.append(TimeLinear(dim_in, dim_hids[0], num_timesteps))
+
+        # Add the hidden layers to the list.
+        for i in range(len(dim_hids) - 1):
+            layers.append(TimeLinear(dim_hids[i], dim_hids[i + 1], num_timesteps))
+
+        # Create the sequential model by stacking the layers.
+        self.layers = nn.ModuleList(layers)
+
+        # ReLU
+        self.relu = nn.ReLU()
+
+        # Output Layer
+        self.output = TimeLinear(dim_hids[-1], dim_out, num_timesteps)
+
         ######################
         
     def forward(self, x: torch.Tensor, t: torch.Tensor):
@@ -97,6 +116,12 @@ class SimpleNet(nn.Module):
         """
         ######## TODO ########
         # DO NOT change the code outside this part.
+
+        for layer in self.layers:
+            x = layer(x, t)
+            x = self.relu(x)
+        
+        x = self.output(x, t)
 
         ######################
         return x
